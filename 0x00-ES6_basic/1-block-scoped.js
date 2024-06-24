@@ -1,10 +1,10 @@
 export default function taskBlock(trueOrFalse) {
-  var task = false;
-  var task2 = true;
+  let task = false; // Use let for block-scoping
+  let task2 = true; // Use let for block-scoping
 
   if (trueOrFalse) {
-    var task = true;
-    var task2 = false;
+    task = true;   // Assign new values directly without redeclaration
+    task2 = false; // Assign new values directly without redeclaration
   }
 
   return [task, task2];
