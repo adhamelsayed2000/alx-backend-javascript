@@ -10,10 +10,25 @@
     "@babel/core": "^7.24.7",
     "@babel/node": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.17.0",
     "jest": "^27.0.0"
-  }
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "name": "adham",
+  "description": "![](https://res.cloudinary.com/practicaldev/image/fetch/s--3uACPZfr--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/398a310kjdiv647cld1y.jpg)",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "dependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
