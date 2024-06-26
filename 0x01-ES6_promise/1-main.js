@@ -1,4 +1,10 @@
-import getFullResponseFromAPI from './1-promise';
+import getFullResponseFromAPI from './1-promise'; // Ensure the path is correct
 
-console.log(getFullResponseFromAPI(true));
-console.log(getFullResponseFromAPI(false));
+getFullResponseFromAPI(true)
+  .then(response => {
+    console.log(response);
+  })
+  .catch(error => {
+    console.error('Error occurred:', error.message);
+    process.exit(1); // Exit with non-zero status code on error
+  });
