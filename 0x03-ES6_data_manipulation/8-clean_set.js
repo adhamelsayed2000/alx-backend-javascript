@@ -1,9 +1,9 @@
 export default function cleanSet(set, startString) {
-  if (!startString || typeof startString !== 'string') {
+  if (!startString || startString.length === 0) {
     return '';
   }
 
-  return [...set]
+  return Array.from(set)
     .filter((value) => value.startsWith(startString))
     .map((value) => value.slice(startString.length))
     .join('-');
